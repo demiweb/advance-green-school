@@ -17,9 +17,6 @@
 
   .section-head {
     margin-bottom: 50px;
-    text {
-      fill: #486170;
-    }
   }
   p {
     font-size: 24px;
@@ -36,7 +33,7 @@
   .bubble-1, .bubble-2, .bubble-3 {
     position: absolute;
     border-radius: 100%;
-    background: linear-gradient(180deg, #2770C00F 0%, #39C2E00F 100%);
+    background: $grey-gradient;
   }
 
   .bubble-4, .bubble-5 {
@@ -71,18 +68,18 @@
 .about-us-img {
   flex: 0 0 566px;
 
-  background: linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+  background: $blue-gradient;
 
   .bubble-1 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
   }
 
   .bubble-2 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2DD882 0%, #1FAB64 100%);
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $green-gradient;
   }
 
   .bubble-3 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
   }
 
   .science-img {

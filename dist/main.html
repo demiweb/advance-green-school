@@ -8,6 +8,7 @@
 
     <!-- Подключение линков -->
     <link href="http://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="css/style.min.css">
 
     <title>Advance Green School</title>
@@ -43,106 +44,115 @@
                     </button>
                 </div>
                 <div class="hero-icons">
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_i_414_1269)">
-                            <circle cx="36" cy="36" r="31" fill="white"/>
-                        </g>
-                        <circle cx="36" cy="36" r="35.5" stroke="#BEC7E7" stroke-dasharray="2 2"/>
-                        <path d="M38.375 33.375H43.0625V38.0625H38.375V49H33.6875V38.0625H29V33.375H33.6875V31.4141C33.6875 29.5562 34.2719 27.2094 35.4344 25.9266C36.5969 24.6406 38.0484 24 39.7875 24H43.0625V28.6875H39.7812C39.0031 28.6875 38.375 29.3156 38.375 30.0922V33.375Z"
-                              fill="#3B5998"/>
-                        <defs>
-                            <filter id="filter0_i_414_1269" x="5" y="5" width="63" height="64"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dx="1" dy="2"/>
-                                <feGaussianBlur stdDeviation="2"/>
-                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                                <feColorMatrix type="matrix"
-                                               values="0 0 0 0 0.828819 0 0 0 0 0.848103 0 0 0 0 0.916667 0 0 0 1 0"/>
-                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_414_1269"/>
-                            </filter>
-                        </defs>
-                    </svg>
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_i_414_1274)">
-                            <circle cx="36" cy="36" r="31" fill="white"/>
-                        </g>
-                        <circle cx="36" cy="36" r="35.5" stroke="#BEC7E7" stroke-dasharray="2 2"/>
-                        <path d="M36.5 24C33.1052 24 32.6795 24.0144 31.3462 24.0752C30.0158 24.1359 29.1071 24.3472 28.312 24.6562C27.49 24.9757 26.7929 25.4031 26.098 26.098C25.4031 26.7929 24.9756 27.49 24.6562 28.312C24.3472 29.1071 24.1359 30.0158 24.0752 31.3462C24.0144 32.6795 24 33.1052 24 36.5C24 39.8947 24.0144 40.3204 24.0752 41.6537C24.1359 42.9841 24.3472 43.8928 24.6562 44.6879C24.9756 45.5099 25.4031 46.207 26.098 46.902C26.7929 47.5968 27.49 48.0243 28.312 48.3437C29.1071 48.6527 30.0158 48.864 31.3462 48.9247C32.6795 48.9855 33.1052 48.9999 36.5 48.9999C39.8947 48.9999 40.3204 48.9855 41.6537 48.9247C42.9841 48.864 43.8928 48.6527 44.6879 48.3437C45.5099 48.0243 46.207 47.5968 46.902 46.902C47.5968 46.207 48.0243 45.5099 48.3437 44.6879C48.6527 43.8928 48.864 42.9841 48.9247 41.6537C48.9855 40.3204 48.9999 39.8947 48.9999 36.5C48.9999 33.1052 48.9855 32.6795 48.9247 31.3462C48.864 30.0158 48.6527 29.1071 48.3437 28.312C48.0243 27.49 47.5968 26.7929 46.902 26.098C46.207 25.4031 45.5099 24.9757 44.6879 24.6562C43.8928 24.3472 42.9841 24.1359 41.6537 24.0752C40.3204 24.0144 39.8947 24 36.5 24V24ZM36.5 26.2523C39.8376 26.2523 40.233 26.265 41.551 26.3251C42.7697 26.3808 43.4316 26.5844 43.8721 26.7555C44.4555 26.9823 44.8719 27.2532 45.3093 27.6906C45.7468 28.128 46.0176 28.5444 46.2444 29.1278C46.4156 29.5683 46.6192 30.2302 46.6748 31.4489C46.7349 32.767 46.7477 33.1624 46.7477 36.5C46.7477 39.8376 46.7349 40.233 46.6748 41.551C46.6192 42.7697 46.4156 43.4316 46.2444 43.8721C46.0176 44.4555 45.7468 44.8719 45.3093 45.3093C44.8719 45.7468 44.4555 46.0176 43.8721 46.2444C43.4316 46.4156 42.7697 46.6192 41.551 46.6748C40.2332 46.7349 39.8378 46.7477 36.5 46.7477C33.1621 46.7477 32.7668 46.7349 31.4489 46.6748C30.2302 46.6192 29.5683 46.4156 29.1278 46.2444C28.5444 46.0176 28.128 45.7468 27.6905 45.3093C27.2531 44.8719 26.9822 44.4555 26.7555 43.8721C26.5843 43.4316 26.3807 42.7697 26.3251 41.551C26.2649 40.233 26.2522 39.8376 26.2522 36.5C26.2522 33.1624 26.2649 32.767 26.3251 31.4489C26.3807 30.2302 26.5843 29.5683 26.7555 29.1278C26.9822 28.5444 27.2531 28.128 27.6905 27.6906C28.128 27.2532 28.5444 26.9823 29.1278 26.7555C29.5683 26.5844 30.2302 26.3808 31.4489 26.3251C32.767 26.265 33.1624 26.2523 36.5 26.2523Z"
-                              fill="url(#paint0_linear_414_1274)"/>
-                        <path d="M36.5 40.6666C34.1988 40.6666 32.3333 38.8011 32.3333 36.5C32.3333 34.1988 34.1988 32.3333 36.5 32.3333C38.8011 32.3333 40.6666 34.1988 40.6666 36.5C40.6666 38.8011 38.8011 40.6666 36.5 40.6666ZM36.5 30.0811C32.9549 30.0811 30.0811 32.9549 30.0811 36.5C30.0811 40.045 32.9549 42.9188 36.5 42.9188C40.045 42.9188 42.9188 40.045 42.9188 36.5C42.9188 32.9549 40.045 30.0811 36.5 30.0811Z"
-                              fill="url(#paint1_linear_414_1274)"/>
-                        <path d="M44.6724 29.8276C44.6724 30.6561 44.0008 31.3276 43.1724 31.3276C42.3439 31.3276 41.6724 30.6561 41.6724 29.8276C41.6724 28.9992 42.3439 28.3276 43.1724 28.3276C44.0008 28.3276 44.6724 28.9992 44.6724 29.8276Z"
-                              fill="url(#paint2_linear_414_1274)"/>
-                        <defs>
-                            <filter id="filter0_i_414_1274" x="5" y="5" width="63" height="64"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dx="1" dy="2"/>
-                                <feGaussianBlur stdDeviation="2"/>
-                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                                <feColorMatrix type="matrix"
-                                               values="0 0 0 0 0.828819 0 0 0 0 0.848103 0 0 0 0 0.916667 0 0 0 1 0"/>
-                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_414_1274"/>
-                            </filter>
-                            <linearGradient id="paint0_linear_414_1274" x1="38.688" y1="22.6754" x2="31.3824"
-                                            y2="46.8111" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#515BD4"/>
-                                <stop offset="0.26" stop-color="#9510B8"/>
-                                <stop offset="0.66" stop-color="#E51804"/>
-                                <stop offset="1" stop-color="#FEDA77"/>
-                            </linearGradient>
-                            <linearGradient id="paint1_linear_414_1274" x1="38.688" y1="22.6754" x2="31.3824"
-                                            y2="46.8111" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#515BD4"/>
-                                <stop offset="0.26" stop-color="#9510B8"/>
-                                <stop offset="0.66" stop-color="#E51804"/>
-                                <stop offset="1" stop-color="#FFBF00"/>
-                            </linearGradient>
-                            <linearGradient id="paint2_linear_414_1274" x1="38.6879" y1="22.6755" x2="31.3823"
-                                            y2="46.8113" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#515BD4"/>
-                                <stop offset="0.26" stop-color="#9510B8"/>
-                                <stop offset="0.66" stop-color="#E51804"/>
-                                <stop offset="1" stop-color="#FFBF00"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_i_414_1282)">
-                            <circle cx="36" cy="36" r="31" fill="white"/>
-                        </g>
-                        <circle cx="36" cy="36" r="35.5" stroke="#BEC7E7" stroke-dasharray="2 2"/>
-                        <g clip-path="url(#clip0_414_1282)">
-                            <path d="M50.3939 29.52C50.0604 28.2722 49.0779 27.2897 47.8301 26.9562C45.5683 26.3501 36.4999 26.3501 36.4999 26.3501C36.4999 26.3501 27.4314 26.3501 25.1696 26.9562C23.9221 27.2897 22.9393 28.2722 22.6058 29.52C22 31.7815 22 36.5002 22 36.5002C22 36.5002 22 41.2188 22.6058 43.4801C22.9393 44.7279 23.9221 45.7107 25.1696 46.0441C27.4314 46.65 36.4999 46.65 36.4999 46.65C36.4999 46.65 45.5683 46.65 47.8301 46.0441C49.0779 45.7107 50.0604 44.7279 50.3939 43.4801C51 41.2188 51 36.5002 51 36.5002C51 36.5002 51 31.7815 50.3939 29.52Z"
-                                  fill="#ED1F24"/>
-                            <path d="M33.5996 40.85L41.1338 36.5L33.5996 32.1499V40.85Z" fill="white"/>
-                        </g>
-                        <defs>
-                            <filter id="filter0_i_414_1282" x="5" y="5" width="63" height="64"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dx="1" dy="2"/>
-                                <feGaussianBlur stdDeviation="2"/>
-                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                                <feColorMatrix type="matrix"
-                                               values="0 0 0 0 0.828819 0 0 0 0 0.848103 0 0 0 0 0.916667 0 0 0 1 0"/>
-                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_414_1282"/>
-                            </filter>
-                            <clipPath id="clip0_414_1282">
-                                <rect width="29" height="29" fill="white" transform="translate(22 22)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
+                    <a href="#">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_i_414_1269)">
+                                <circle cx="36" cy="36" r="31" fill="white"/>
+                            </g>
+                            <circle cx="36" cy="36" r="35.5" stroke="#BEC7E7" stroke-dasharray="2 2"/>
+                            <path d="M38.375 33.375H43.0625V38.0625H38.375V49H33.6875V38.0625H29V33.375H33.6875V31.4141C33.6875 29.5562 34.2719 27.2094 35.4344 25.9266C36.5969 24.6406 38.0484 24 39.7875 24H43.0625V28.6875H39.7812C39.0031 28.6875 38.375 29.3156 38.375 30.0922V33.375Z"
+                                  fill="#3B5998"/>
+                            <defs>
+                                <filter id="filter0_i_414_1269" x="5" y="5" width="63" height="64"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                   result="hardAlpha"/>
+                                    <feOffset dx="1" dy="2"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix"
+                                                   values="0 0 0 0 0.828819 0 0 0 0 0.848103 0 0 0 0 0.916667 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_414_1269"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_i_414_1274)">
+                                <circle cx="36" cy="36" r="31" fill="white"/>
+                            </g>
+                            <circle cx="36" cy="36" r="35.5" stroke="#BEC7E7" stroke-dasharray="2 2"/>
+                            <path d="M36.5 24C33.1052 24 32.6795 24.0144 31.3462 24.0752C30.0158 24.1359 29.1071 24.3472 28.312 24.6562C27.49 24.9757 26.7929 25.4031 26.098 26.098C25.4031 26.7929 24.9756 27.49 24.6562 28.312C24.3472 29.1071 24.1359 30.0158 24.0752 31.3462C24.0144 32.6795 24 33.1052 24 36.5C24 39.8947 24.0144 40.3204 24.0752 41.6537C24.1359 42.9841 24.3472 43.8928 24.6562 44.6879C24.9756 45.5099 25.4031 46.207 26.098 46.902C26.7929 47.5968 27.49 48.0243 28.312 48.3437C29.1071 48.6527 30.0158 48.864 31.3462 48.9247C32.6795 48.9855 33.1052 48.9999 36.5 48.9999C39.8947 48.9999 40.3204 48.9855 41.6537 48.9247C42.9841 48.864 43.8928 48.6527 44.6879 48.3437C45.5099 48.0243 46.207 47.5968 46.902 46.902C47.5968 46.207 48.0243 45.5099 48.3437 44.6879C48.6527 43.8928 48.864 42.9841 48.9247 41.6537C48.9855 40.3204 48.9999 39.8947 48.9999 36.5C48.9999 33.1052 48.9855 32.6795 48.9247 31.3462C48.864 30.0158 48.6527 29.1071 48.3437 28.312C48.0243 27.49 47.5968 26.7929 46.902 26.098C46.207 25.4031 45.5099 24.9757 44.6879 24.6562C43.8928 24.3472 42.9841 24.1359 41.6537 24.0752C40.3204 24.0144 39.8947 24 36.5 24V24ZM36.5 26.2523C39.8376 26.2523 40.233 26.265 41.551 26.3251C42.7697 26.3808 43.4316 26.5844 43.8721 26.7555C44.4555 26.9823 44.8719 27.2532 45.3093 27.6906C45.7468 28.128 46.0176 28.5444 46.2444 29.1278C46.4156 29.5683 46.6192 30.2302 46.6748 31.4489C46.7349 32.767 46.7477 33.1624 46.7477 36.5C46.7477 39.8376 46.7349 40.233 46.6748 41.551C46.6192 42.7697 46.4156 43.4316 46.2444 43.8721C46.0176 44.4555 45.7468 44.8719 45.3093 45.3093C44.8719 45.7468 44.4555 46.0176 43.8721 46.2444C43.4316 46.4156 42.7697 46.6192 41.551 46.6748C40.2332 46.7349 39.8378 46.7477 36.5 46.7477C33.1621 46.7477 32.7668 46.7349 31.4489 46.6748C30.2302 46.6192 29.5683 46.4156 29.1278 46.2444C28.5444 46.0176 28.128 45.7468 27.6905 45.3093C27.2531 44.8719 26.9822 44.4555 26.7555 43.8721C26.5843 43.4316 26.3807 42.7697 26.3251 41.551C26.2649 40.233 26.2522 39.8376 26.2522 36.5C26.2522 33.1624 26.2649 32.767 26.3251 31.4489C26.3807 30.2302 26.5843 29.5683 26.7555 29.1278C26.9822 28.5444 27.2531 28.128 27.6905 27.6906C28.128 27.2532 28.5444 26.9823 29.1278 26.7555C29.5683 26.5844 30.2302 26.3808 31.4489 26.3251C32.767 26.265 33.1624 26.2523 36.5 26.2523Z"
+                                  fill="url(#paint0_linear_414_1274)"/>
+                            <path d="M36.5 40.6666C34.1988 40.6666 32.3333 38.8011 32.3333 36.5C32.3333 34.1988 34.1988 32.3333 36.5 32.3333C38.8011 32.3333 40.6666 34.1988 40.6666 36.5C40.6666 38.8011 38.8011 40.6666 36.5 40.6666ZM36.5 30.0811C32.9549 30.0811 30.0811 32.9549 30.0811 36.5C30.0811 40.045 32.9549 42.9188 36.5 42.9188C40.045 42.9188 42.9188 40.045 42.9188 36.5C42.9188 32.9549 40.045 30.0811 36.5 30.0811Z"
+                                  fill="url(#paint1_linear_414_1274)"/>
+                            <path d="M44.6724 29.8276C44.6724 30.6561 44.0008 31.3276 43.1724 31.3276C42.3439 31.3276 41.6724 30.6561 41.6724 29.8276C41.6724 28.9992 42.3439 28.3276 43.1724 28.3276C44.0008 28.3276 44.6724 28.9992 44.6724 29.8276Z"
+                                  fill="url(#paint2_linear_414_1274)"/>
+                            <defs>
+                                <filter id="filter0_i_414_1274" x="5" y="5" width="63" height="64"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                   result="hardAlpha"/>
+                                    <feOffset dx="1" dy="2"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix"
+                                                   values="0 0 0 0 0.828819 0 0 0 0 0.848103 0 0 0 0 0.916667 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_414_1274"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_414_1274" x1="38.688" y1="22.6754" x2="31.3824"
+                                                y2="46.8111" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#515BD4"/>
+                                    <stop offset="0.26" stop-color="#9510B8"/>
+                                    <stop offset="0.66" stop-color="#E51804"/>
+                                    <stop offset="1" stop-color="#FEDA77"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_414_1274" x1="38.688" y1="22.6754" x2="31.3824"
+                                                y2="46.8111" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#515BD4"/>
+                                    <stop offset="0.26" stop-color="#9510B8"/>
+                                    <stop offset="0.66" stop-color="#E51804"/>
+                                    <stop offset="1" stop-color="#FFBF00"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_414_1274" x1="38.6879" y1="22.6755" x2="31.3823"
+                                                y2="46.8113" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#515BD4"/>
+                                    <stop offset="0.26" stop-color="#9510B8"/>
+                                    <stop offset="0.66" stop-color="#E51804"/>
+                                    <stop offset="1" stop-color="#FFBF00"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_i_414_1282)">
+                                <circle cx="36" cy="36" r="31" fill="white"/>
+                            </g>
+                            <circle cx="36" cy="36" r="35.5" stroke="#BEC7E7" stroke-dasharray="2 2"/>
+                            <g clip-path="url(#clip0_414_1282)">
+                                <path d="M50.3939 29.52C50.0604 28.2722 49.0779 27.2897 47.8301 26.9562C45.5683 26.3501 36.4999 26.3501 36.4999 26.3501C36.4999 26.3501 27.4314 26.3501 25.1696 26.9562C23.9221 27.2897 22.9393 28.2722 22.6058 29.52C22 31.7815 22 36.5002 22 36.5002C22 36.5002 22 41.2188 22.6058 43.4801C22.9393 44.7279 23.9221 45.7107 25.1696 46.0441C27.4314 46.65 36.4999 46.65 36.4999 46.65C36.4999 46.65 45.5683 46.65 47.8301 46.0441C49.0779 45.7107 50.0604 44.7279 50.3939 43.4801C51 41.2188 51 36.5002 51 36.5002C51 36.5002 51 31.7815 50.3939 29.52Z"
+                                      fill="#ED1F24"/>
+                                <path d="M33.5996 40.85L41.1338 36.5L33.5996 32.1499V40.85Z" fill="white"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_i_414_1282" x="5" y="5" width="63" height="64"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                   result="hardAlpha"/>
+                                    <feOffset dx="1" dy="2"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix"
+                                                   values="0 0 0 0 0.828819 0 0 0 0 0.848103 0 0 0 0 0.916667 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_414_1282"/>
+                                </filter>
+                                <clipPath id="clip0_414_1282">
+                                    <rect width="29" height="29" fill="white" transform="translate(22 22)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
                 </div>
                 <div class="bubble-1"></div>
                 <div class="bubble-2">
@@ -169,7 +179,7 @@
                     </defs>
                 </svg>
                 <img src="img/hero-img.png" alt=""
-                     style="-webkit-mask: url('img/hero-img-mask.png') no-repeat center / cover">
+                     style="-webkit-mask: url('img/hero-img-mask.png') no-repeat center 100%">
                 <svg class="line-2" width="71" height="95" viewBox="0 0 71 95" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -208,7 +218,7 @@
                     </defs>
                 </svg>
                 <img src="img/about-us-img.png" alt=""
-                     style="-webkit-mask: url('img/hero-img-mask.png') no-repeat center / cover">
+                     style="-webkit-mask: url('img/hero-img-mask.png') no-repeat center 100%">
                 <svg class="line-2" width="71" height="95" viewBox="0 0 71 95" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -229,14 +239,7 @@
             </div>
             <div class="about-us-content">
                 <span class="section-head">
-                    <svg width="272" height="139" viewBox="0 0 272 139" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-                        >Про нас</text>
-                        <path d="M262.994 57.0915C263.807 63.9207 261.12 70.8236 255.457 77.4768C249.794 84.1311 241.183 90.4977 230.245 96.2254C208.373 107.679 177.292 116.529 142.189 120.038C107.086 123.547 74.6526 121.045 50.5989 114.181C38.5706 110.749 28.6634 106.233 21.5665 100.854C14.4708 95.4764 10.2219 89.2667 9.40852 82.4375C8.59515 75.6083 11.2823 68.7054 16.9451 62.0522C22.6088 55.3979 31.22 49.0313 42.1573 43.3036C64.0294 31.8497 95.1105 22.9996 130.214 19.491C165.317 15.9824 197.75 18.4842 221.804 25.3478C233.832 28.7801 243.739 33.2958 250.836 38.6746C257.932 44.0526 262.181 50.2623 262.994 57.0915Z"
-                              stroke="#32B573"/>
-                        <path d="M263.76 71.639C263.667 78.5059 260.09 85.0476 253.59 91.0029C247.089 96.9591 237.7 102.294 226.086 106.73C202.86 115.601 170.834 120.839 135.518 120.321C100.203 119.802 68.3312 113.624 45.354 104.074C33.864 99.2986 24.6228 93.6899 18.2857 87.5451C11.9496 81.4012 8.55014 74.757 8.64295 67.89C8.73575 61.023 12.3135 54.4813 18.8131 48.5261C25.3137 42.5699 34.7028 37.235 46.3173 32.7989C69.5435 23.9279 101.57 18.6895 136.885 19.2085C172.2 19.7274 204.072 25.9048 227.049 35.4548C238.539 40.2304 247.78 45.8391 254.117 51.9839C260.453 58.1278 263.853 64.772 263.76 71.639Z"
-                              stroke="#32B573"/>
-                    </svg>
+                    Про нас
                 </span>
                 <p>
                     <strong>Місія школи -</strong> це гармонійний розвиток кожної дитини в умовах психологічного та
@@ -255,13 +258,7 @@
             <div class="values-content">
                 <div class="values-item">
                     <span class="section-head">
-                     <svg width="295" height="139" viewBox="0 0 295 139" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Цінності</text>
-                         <path d="M284.964 56.9458C285.858 63.7618 282.962 70.6563 276.824 77.3051C270.686 83.953 261.348 90.3071 249.485 96.0168C225.761 107.434 192.039 116.228 153.944 119.671C115.849 123.114 80.638 120.551 54.5116 113.639C41.4463 110.182 30.6803 105.645 22.964 100.249C15.2465 94.8525 10.632 88.6368 9.73842 81.8208C8.84481 75.0048 11.7405 68.1103 17.8788 61.4615C24.0162 54.8136 33.3543 48.4596 45.2178 42.7498C68.9411 31.3322 102.663 22.5386 140.758 19.0955C178.853 15.6525 214.064 18.2159 240.191 25.1281C253.256 28.5847 264.022 33.1218 271.738 38.5175C279.456 43.9141 284.07 50.1298 284.964 56.9458Z"
-                               stroke="white"/>
-                         <path d="M285.823 71.4999C285.735 78.3509 281.874 84.8829 274.825 90.8317C267.777 96.7795 257.593 102.1 244.991 106.516C219.793 115.347 185.038 120.526 146.705 119.94C108.372 119.354 73.7628 113.115 48.7998 103.517C36.3163 98.7177 26.2713 93.0881 19.3785 86.9273C12.4844 80.7654 8.79097 74.1179 8.87849 67.2669C8.96601 60.4158 12.8278 53.8838 19.8766 47.935C26.924 41.9872 37.1089 36.6669 49.7101 32.2507C74.9086 23.4196 109.664 18.2406 147.997 18.8265C186.33 19.4124 220.939 25.6517 245.902 35.2494C258.385 40.049 268.43 45.6786 275.323 51.8394C282.217 58.0014 285.91 64.6488 285.823 71.4999Z"
-                               stroke="white"/>
-                    </svg>
+                        Цінності
                 </span>
                 </div>
                 <div class="values-item">
@@ -324,9 +321,150 @@
     <!--  Start section gallery  -->
     <section class="gallery">
         <div class="container">
+            <span class="section-head">
+                Галерея
+            </span>
+            <!-- Slider main container -->
+            <div class="swiper gallery-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper gallery-swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/gallery-slide-img-1.png" alt="">
+                        <img src="img/gallery-slide-img-3.png" alt="">
+                        <img src="img/gallery-slide-img-5.png" alt="">
+                        <img src="img/gallery-slide-img-2.png" alt="">
+                        <img src="img/gallery-slide-img-4.png" alt="">
+                        <img src="img/gallery-slide-img-6.png" alt="">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/gallery-slide-img-3.png" alt="">
+                        <img src="img/gallery-slide-img-2.png" alt="">
+                        <img src="img/gallery-slide-img-1.png" alt="">
+                    </div>
+                </div>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-prev-custom"></div>
+                <div class="swiper-button-next swiper-button-next-custom"></div>
+
+            </div>
         </div>
     </section> <!--  End section gallery  -->
+
+    <!--  Start section privilege  -->
+    <section class="privilege">
+        <span class="section-head">
+            Ми в цифрах
+            </span>
+        <div class="privilege-content">
+            <div class="privilege-step">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+                <span>
+                    3
+                </span>
+                <p>
+                    роки існування найкращої школи для дітей
+                </p>
+            </div>
+            <div class="privilege-step">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+                <span>
+                    1
+                </span>
+                <p>
+                    га території для навчання та розваг дітей
+                </p>
+            </div>
+            <div class="privilege-step">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+                <span>
+                    45
+                </span>
+                <p>
+                    викладачів займаються з дітьми щоденно
+                </p>
+            </div>
+            <div class="privilege-step">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+                <span>
+                    2
+                </span>
+                <p>
+                    міжнародні школи-партнери, які нам довіряють
+                </p>
+            </div>
+            <div class="privilege-step">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+                <span>
+                    15
+                </span>
+                <p>
+                    гуртків та секцій для всебічного розвитку дітей
+                </p>
+            </div>
+            <img src="img/privilege-img.png" alt="">
+        </div>
+    </section> <!--  End section privilege  -->
+
+    <!--  Start section application  -->
+    <section class="application">
+        <div class="container">
+            <div class="application-content">
+                <div class="application-text">
+                    <span>
+                        1-6 класи
+                    </span>
+                    <h2>
+                        Набір на <strong>2022-2023</strong> навчальний рік розпочато!
+                    </h2>
+                    <div class="step">
+                        <div>
+                            <img src="img/svg/application-step-icon-1.svg" alt="">
+                            <div class="bubble-1"></div>
+                            <div class="bubble-2"></div>
+                        </div>
+                        <span>01</span>
+                        <p>
+                            Дошкільне навчання
+                        </p>
+
+                    </div>
+                    <div class="step">
+                        <div>
+                            <img src="img/svg/application-step-icon-2.svg" alt="">
+                            <div class="bubble-1"></div>
+                            <div class="bubble-2"></div>
+                        </div>
+                        <span>02</span>
+                        <p>
+                            Молодша школа
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <img src="img/svg/application-step-icon-3.svg" alt="">
+                            <div class="bubble-1"></div>
+                            <div class="bubble-2"></div>
+                        </div>
+                        <span>03</span>
+                        <p>
+                            Середня школа
+                        </p>
+
+                    </div>
+                </div>
+                <div class="application-img">
+                    <img src="img/application-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section> <!--  End section application  -->
 </main>
 
 <!--<div class="bubble-4"></div>-->
@@ -338,6 +476,7 @@
 </footer>
 
 <!-- Подключение скриптов -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <!--<script src="js/main.min.js"></script>-->
 <script src="js/main.js"></script>
 </body>

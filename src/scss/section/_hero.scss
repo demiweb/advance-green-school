@@ -47,7 +47,7 @@
   .bubble-1, .bubble-2 {
     position: absolute;
     border-radius: 100%;
-    background: linear-gradient(180deg, #2770C00F 0%, #39C2E00F 100%);
+    background: $grey-gradient;
   }
 
   .bubble-1 {
@@ -90,7 +90,7 @@
   display: flex;
   justify-content: flex-start;
 
-  svg {
+  a {
     &:not(:last-of-type) {
       margin-right: 14px;
     }
@@ -102,14 +102,14 @@
   flex: 0 0 566px;
 
   .bubble-1 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(90deg, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $fiolet-gradient;
   }
 
   .bubble-2 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
   }
 
   .bubble-3 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
   }
 }

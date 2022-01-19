@@ -6,7 +6,7 @@
 }
 
 .values-content {
-  background: linear-gradient(90deg, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+  background: $fiolet-gradient;
   border-radius: 0 130px;
   padding: 120px;
   display: flex;
@@ -67,8 +67,9 @@
     background: transparent;
 
     .section-head {
-      text {
-        fill: #fff;
+      color: #fff;
+      &:after, &:before {
+        border-color: #fff;
       }
     }
   }

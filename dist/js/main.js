@@ -38,3 +38,24 @@ function helloConsole() {
 }
 
 helloConsole();
+
+const gallerySwiper = new Swiper('.gallery-swiper', {
+    effect: 'creative',
+    creativeEffect: {
+        prev: {
+            scale: 1,
+        },
+        next: {
+            scale: 1.1,
+        },
+    },
+    autoplay: false,
+    speed: 300,
+    autoHeight: true,
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+        nextEl: '.gallery-swiper .swiper-button-next',
+        prevEl: '.gallery-swiper .swiper-button-prev',
+    },
+})

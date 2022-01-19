@@ -14,10 +14,28 @@ body {
 }
 
 .section-head {
-  display: block;
+  display: inline-block;
   font-size: 45px;
   line-height: 60px;
   font-weight: 600;
+  position: relative;
+  color: $second-color;
+
+  &:before, &:after {
+    content: '';
+    border: 1px solid $green;
+    border-radius: 50%;
+    width: calc(100% + 70px);
+    height:calc(100% + 40px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%) rotate(-3deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -47%) rotate(3deg);
+  }
 }
 
 .container {

@@ -2,10 +2,11 @@
 @import "../common/mixins";
 
 .fiolet-btn {
-  @include  btn(#fff, linear-gradient(90deg, #EA5FAB 0%, #8D3BDE 47.21%, #3669CD 97.47%));
+  @include btn(#fff, $fiolet-rotate-gradient);
   box-shadow: 0 9px 33px rgba(63, 22, 77, 0.35);
 }
+
 .white-btn {
-  @include  btn($second-color, #fff);
+  @include btn($second-color, #fff);
   box-shadow: 0 3px 28px rgba(43, 64, 83, 0.12);
 }
