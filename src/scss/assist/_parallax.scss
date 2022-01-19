@@ -1,0 +1,16 @@
+.bubble-4 {
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+  top: 0;
+  right: 0;
+}
+
+.bubble-5 {
+  width: 52px;
+  height: 52px;
+  transform: rotate(180deg);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2DD882 0%, #1FAB64 100%), linear-gradient(90deg, #fff 0%, #fff 100%);
+  top: 0;
+  right: 0;
+}

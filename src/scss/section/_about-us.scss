@@ -1,0 +1,96 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.about-us {
+  padding: 160px 0 0 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about-us-content {
+  position: relative;
+  flex: 0 0 calc(100% - 566px);
+  margin-left: 90px;
+
+  .section-head {
+    margin-bottom: 50px;
+    text {
+      fill: #486170;
+    }
+  }
+  p {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    max-width: 474px;
+    margin-left: 70px;
+
+    strong {
+      color: $green;
+    }
+  }
+
+  .bubble-1, .bubble-2, .bubble-3 {
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #2770C00F 0%, #39C2E00F 100%);
+  }
+
+  .bubble-4, .bubble-5 {
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(60px);
+  }
+
+  .bubble-1 {
+    width: 246px;
+    height: 246px;
+    left: 0;
+    top: 178px;
+  }
+
+  .bubble-2 {
+    width: 57px;
+    height: 57px;
+    top: 390px;
+    left: 215px;
+  }
+
+  .bubble-3 {
+    width: 20px;
+    height: 20px;
+    top: 445px;
+    left: 275px;
+  }
+}
+
+.about-us-img {
+  flex: 0 0 566px;
+
+  background: linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+
+  .bubble-1 {
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+  }
+
+  .bubble-2 {
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2DD882 0%, #1FAB64 100%);
+  }
+
+  .bubble-3 {
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+  }
+
+  .science-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: -132px;
+    bottom: 40px;
+    z-index: -1;
+  }
+}
