@@ -13,6 +13,10 @@ body {
   font-family: 'Euclid Circular B', sans-serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 .section-head {
   display: inline-block;
   font-size: 45px;

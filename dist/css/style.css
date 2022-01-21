@@ -11,6 +11,10 @@ body {
   font-family: "Euclid Circular B", sans-serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 .section-head {
   display: inline-block;
   font-size: 45px;
@@ -793,6 +797,7 @@ body {
 
 .application {
   padding: 120px 0 150px;
+  position: relative;
 }
 
 .application-content {
@@ -810,13 +815,48 @@ body {
 
 .application-text {
   z-index: 3;
+  position: relative;
 }
 
-.application-text span {
+.application-text > span {
   font-size: 21px;
   line-height: 50px;
   font-weight: 600;
-  display: block;
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3669CD), color-stop(47.21%, #8D3BDE), color-stop(97.47%, #EA5FAB));
+  background-image: -o-linear-gradient(left, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+  background-image: linear-gradient(90deg, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+  position: relative;
+  margin: 0 0 20px 30px;
+}
+
+.application-text > span:after,
+.application-text > span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 60px);
+  height: 90%;
+  border-top: 1px solid #8d3bde;
+  border-right: 1px solid #ea5fab;
+  border-bottom: 1px solid #8d3bde;
+  border-left: 1px solid #3669cd;
+  border-radius: 50%;
+}
+
+.application-text > span:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-3deg);
+      -ms-transform: translate(-50%, -50%) rotate(-3deg);
+          transform: translate(-50%, -50%) rotate(-3deg);
+}
+
+.application-text > span:before {
+  -webkit-transform: translate(-50%, -50%) rotate(3deg);
+      -ms-transform: translate(-50%, -50%) rotate(3deg);
+          transform: translate(-50%, -50%) rotate(3deg);
 }
 
 .application-text h2 {
@@ -825,11 +865,19 @@ body {
   line-height: 54px;
   font-weight: 600;
   color: #486170;
-  margin-bottom: 45px;
+  margin-bottom: 52px;
 }
 
 .application-text h2 strong {
   color: #32B573;
+}
+
+.application-text > img {
+  width: 138px;
+  height: 115px;
+  position: absolute;
+  top: 0;
+  left: 455px;
 }
 
 .application-text .step {
@@ -866,7 +914,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   font-weight: 700;
-  margin: 10px 0 0;
+  margin: 15px 0 0;
   color: #BEC7E7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,14 +948,14 @@ body {
   width: 21px;
   height: 21px;
   top: -20px;
-  right: -20px;
+  right: -16px;
 }
 
 .application-text .step .bubble-2 {
   width: 9px;
   height: 9px;
   top: 5px;
-  right: -24px;
+  right: -20px;
 }
 
 .application-img {
@@ -915,6 +963,27 @@ body {
   bottom: 0;
   right: 0;
   font-size: 0;
+}
+
+.application-btn {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 37px);
+      -ms-transform: translate(-50%, 37px);
+          transform: translate(-50%, 37px);
+  z-index: 5;
+}
+
+.application-btn a {
+  width: 280px;
+  height: 74px;
+}
+
+.planets {
+  position: absolute;
+  top: 195px;
+  right: -424px;
 }
 
 @media screen and (max-width: 1600px) {
