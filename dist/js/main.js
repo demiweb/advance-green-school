@@ -40,7 +40,7 @@ function helloConsole() {
 helloConsole();
 
 const gallerySwiper = new Swiper('.gallery-swiper', {
-    effect: 'creative',
+    effect: 'fade',
     creativeEffect: {
         prev: {
             scale: 1,
@@ -49,6 +49,7 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
             scale: 1.1,
         },
     },
+
     autoplay: false,
     speed: 300,
     autoHeight: true,
@@ -58,4 +59,57 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
         nextEl: '.gallery-swiper .swiper-button-next',
         prevEl: '.gallery-swiper .swiper-button-prev',
     },
-})
+});
+
+
+let cardsSlider = [...document.querySelectorAll('.gallery-mob')];
+function goCardsSlider() {
+    if (!cardsSlider.length) {
+
+    } else {
+        cardsSlider.forEach((sld) => {
+            let sldCont = sld.querySelector('.gallery-slider__container');
+
+            let sldNext = sld.querySelector('.swiper-button-next');
+            let sldPrev = sld.querySelector('.swiper-button-prev');
+            const swiper2 = new Swiper(sldCont, {
+                // Optional parameters
+                loop: false,
+                spaceBetween: 20,
+                slidesPerView: 2,
+                slidesPerColumn: 2,
+                slidesPerGroup:1,
+                slidesPerColumnFill: 'row',
+                speed: 600,
+                // spaceBetween: 10,
+                autoplay: {
+                    delay: 4000,
+                    pauseOnMouseEnter: true,
+                },
+                navigation: {
+                    nextEl: sldNext,
+                    prevEl: sldPrev,
+                },
+
+                breakpoints: {
+
+                    // when window width is >= 320px
+
+                    // when window width is >= 480px
+                    620: {
+                        loop: false,
+                        spaceBetween: 10,
+                        slidesPerView: 1,
+                        slidesPerColumn: 2,
+                        slidesPerGroup:1,
+                        slidesPerColumnFill: 'row',
+
+                    },
+                },
+
+            });
+        })
+    }
+}
+
+goCardsSlider();

@@ -1,0 +1,25 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.location {
+  padding: 120px 0;
+  background: $second-section-bg;
+  .section-head {
+    margin: 0 0 50px 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.location-content {
+  ul {
+    list-style: url("../img/svg/check.svg");
+    li {
+
+    }
+  }
+  img {
+    &:nth-of-type(1) {
+
+    }
+  }
+}
