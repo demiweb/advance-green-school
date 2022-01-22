@@ -39,6 +39,50 @@ function helloConsole() {
 
 helloConsole();
 
+
+window.onscroll = function () {
+    scrollFunction();
+
+};
+
+function checkScrollDir() {
+    newValue = window.pageYOffset;
+    // console.log(window.pageYOffset + ' pageoffset')
+    if (oldValue > newValue) {
+        // console.log('scroll top?')
+        document.querySelector('.header').classList.remove('sticked');
+        document.querySelector('.header').classList.add('shadow');
+        if (window.pageYOffset <= 50) {
+            document.querySelector('.header').classList.remove('sticked');
+            document.querySelector('.header').classList.remove('shadow');
+        } else {
+
+        }
+    } else if (window.pageYOffset <= 50) {
+        document.querySelector('.header').classList.remove('sticked');
+        document.querySelector('.header').classList.remove('shadow');
+    } else {
+        document.querySelector('.header').classList.add('shadow');
+        document.querySelector('.header').classList.add('sticked');
+
+    }
+
+
+    oldValue = newValue;
+}
+
+let oldValue = 0;
+let newValue = 0;
+
+function scrollFunction() {
+    checkScrollDir();
+
+}
+
+document.onload = () => {
+    scrollFunction();
+};
+
 const gallerySwiper = new Swiper('.gallery-swiper', {
     effect: 'fade',
     creativeEffect: {
@@ -77,6 +121,7 @@ const heroSwiper = new Swiper('.hero-swiper', {
     speed: 300,
     loop: false,
     preloadImages: false,
+    slidesPerView: 1,
     lazy: {
         loadOnTransitionStart: false,
         loadPrevNext: false,
@@ -136,19 +181,27 @@ if (!orderServiceBtn.length) {
 
 } else {
     const popupForm = document.querySelector('.popup-form')
-        orderServiceBtn.forEach(btn => {
-            btn.addEventListener('click', function (elem) {
-                elem.preventDefault()
-                popupForm.classList.add('show')
-                document.querySelector('body').classList.add('no-scroll')
-            })
+    orderServiceBtn.forEach(btn => {
+        btn.addEventListener('click', function (elem) {
+            elem.preventDefault();
+            popupForm.classList.add('show');
+            document.querySelector('body').classList.add('no-scroll')
         })
+    });
 
+    let closeBtn = [...document.querySelectorAll('.close-popup')];
+
+    closeBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            document.querySelector('body').classList.remove('no-scroll');
+            popupForm.classList.remove('show');
+        })
+    });
     window.addEventListener('click', function (elem) {
-        elem.stopPropagation()
+        elem.stopPropagation();
 
         if (elem.target.classList.contains('show')) {
-            popupForm.classList.remove('show')
+            popupForm.classList.remove('show');
             document.querySelector('body').classList.remove('no-scroll')
         }
     })
@@ -207,3 +260,11 @@ function goCardsSlider() {
 }
 
 goCardsSlider();
+
+$(".menu li a").click(function (e) {
+    e.preventDefault();
+    let lnk = $(this).attr("href");
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(lnk).offset().top - 70
+    }, 500);
+});
