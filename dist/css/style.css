@@ -2077,6 +2077,93 @@ h2 {
   margin-right: 30px;
 }
 
+.address-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.address-content .bubble-1,
+.address-content .bubble-2,
+.address-content .bubble-3 {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.address-content .bubble-3 {
+  right: 255px;
+  bottom: 38px;
+  width: 305px;
+  height: 305px;
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#2770C0), to(#39C2ED));
+  background: -o-radial-gradient(29.76% 19.64%, 69.64% 69.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -o-linear-gradient(top, #2770C0 0%, #39C2ED 100%);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+  z-index: -1;
+}
+
+.address-map {
+  width: 55.46%;
+}
+
+.address-text {
+  width: 23.43%;
+  margin-left: 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 3.75px 20px rgba(43, 64, 83, 0.09);
+          box-shadow: 0 3.75px 20px rgba(43, 64, 83, 0.09);
+  border-radius: 37.5px;
+  padding: 38px 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.address-text .text-item {
+  font-size: 21px;
+  line-height: 42px;
+}
+
+.address-text .text-item:not(:first-child) {
+  margin-top: 35px;
+}
+
+.address-text .text-item span {
+  display: block;
+}
+
+.address-text .text-item a {
+  display: block;
+  text-decoration: none;
+  color: #32B573;
+  font-weight: 700;
+}
+
+.address-text .bubble-1,
+.address-text .bubble-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2770C0), to(#39C2ED));
+  background: -o-linear-gradient(top, #2770C0 0%, #39C2ED 100%);
+  background: linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+  opacity: 0.06;
+}
+
+.address-text .bubble-1 {
+  top: -80px;
+  right: -115px;
+  width: 233px;
+  height: 233px;
+}
+
+.address-text .bubble-2 {
+  top: 144px;
+  right: 97px;
+  width: 38px;
+  height: 38px;
+}
+
 .privilege-step {
   margin: 0;
 }
