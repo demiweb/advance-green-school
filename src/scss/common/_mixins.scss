@@ -10,4 +10,8 @@
   font-weight: 700;
   color: $color;
   background: $background;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
