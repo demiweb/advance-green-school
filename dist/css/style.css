@@ -2005,6 +2005,78 @@ h2 {
   padding-left: 15px;
 }
 
+.networks {
+  margin-bottom: 120px;
+}
+
+.networks-content {
+  border-radius: 30px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#3669CD), color-stop(47.21%, #8D3BDE), color-stop(97.47%, #EA5FAB));
+  background: -o-linear-gradient(left, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+  background: linear-gradient(90deg, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.networks-content h2 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.networks-content h2 .section-head {
+  color: #fff;
+}
+
+.networks-content h2 .section-head:after,
+.networks-content h2 .section-head:before {
+  border-color: #fff;
+  width: calc(100% + 20px);
+}
+
+.networks-content p {
+  color: #fff;
+  max-width: 377px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.networks-content img {
+  position: absolute;
+}
+
+.networks-content img:first-of-type {
+  top: 0;
+  left: 0;
+}
+
+.networks-content img:last-of-type {
+  bottom: 0;
+  right: 0;
+}
+
+.networks-items a {
+  text-decoration: none;
+}
+
+.networks-items a:not(:last-of-type) {
+  margin-right: 30px;
+}
+
 .privilege-step {
   margin: 0;
 }
