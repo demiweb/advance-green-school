@@ -68,6 +68,10 @@ main {
   height: 100%;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 h2 {
   font-size: 45px;
   line-height: 54px;

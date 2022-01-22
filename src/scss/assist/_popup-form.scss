@@ -1,0 +1,96 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.popup-form {
+  visibility: hidden;
+
+  &:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(40px);
+    z-index: 40;
+  }
+}
+
+.popup-form.show {
+  visibility: visible;
+
+  .popup-form-content {
+    opacity: 1;
+  }
+}
+
+.popup-form-content {
+  transition: all .5s ease;
+
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44.79%;
+  background: #fff;
+  padding: 120px 190px;
+  box-shadow: 0 9px 41px rgba(63, 22, 77, 0.2);
+  border-radius: 60px;
+  overflow: hidden;
+  z-index: 60;
+
+  h2 {
+    color: $second-color;
+    margin-bottom: 50px;
+  }
+
+  form {
+    label {
+      width: 100%;
+      font-size: 16px;
+      display: block;
+
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+
+      input {
+        width: 100%;
+        height: 74px;
+        padding: 24px 33px;
+        background: #EFEFF4;
+        border-radius: 300px;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 74px;
+    }
+  }
+}
+
+.popup-form-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

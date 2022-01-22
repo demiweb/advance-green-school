@@ -90,13 +90,67 @@ if (!goTopBtn.length) {
 
 } else {
     goTopBtn.forEach(btn => {
-        btn.addEventListener('click', function(elem) {
+        btn.addEventListener('click', function (elem) {
             elem.preventDefault()
             window.scrollTo({
                 top: 'start',
                 behavior: 'smooth'
             })
         })
+    })
+}
+
+const toNextSection = document.getElementById('to-next-section')
+
+if (!toNextSection) {
+
+} else {
+    toNextSection.addEventListener('click', function (elem) {
+        elem.preventDefault()
+
+        const section = document.querySelector('.about-us')
+        const y = section.offsetTop
+
+        scrollTo({
+            top: y,
+            behavior: "smooth"
+        })
+    })
+}
+
+const burger = document.querySelector('.header-burger')
+
+if (!burger) {
+
+} else {
+    burger.addEventListener('click', function (elem) {
+        burger.classList.toggle('open')
+        document.querySelector('.header').classList.toggle('open')
+        document.querySelector('body').classList.toggle('no-scroll')
+    })
+}
+
+const orderServiceBtn = document.querySelectorAll('.order-service')
+
+if (!orderServiceBtn.length) {
+
+} else {
+    const popupForm = document.querySelector('.popup-form')
+        orderServiceBtn.forEach(btn => {
+            btn.addEventListener('click', function (elem) {
+                elem.preventDefault()
+                popupForm.classList.add('show')
+                document.querySelector('body').classList.add('no-scroll')
+            })
+        })
+
+    window.addEventListener('click', function (elem) {
+        elem.stopPropagation()
+
+        if (elem.target.classList.contains('show')) {
+            popupForm.classList.remove('show')
+            document.querySelector('body').classList.remove('no-scroll')
+        }
     })
 }
 
