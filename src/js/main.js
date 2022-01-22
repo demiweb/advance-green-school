@@ -61,8 +61,31 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
     },
 });
 
+const heroSwiper = new Swiper('.hero-swiper', {
+    effect: 'fade',
+    creativeEffect: {
+        prev: {
+            scale: 1.1,
+        },
+        next: {
+            scale: 1,
+        },
+    },
+    autoplay: {
+        delay: 5000
+    },
+    speed: 300,
+    loop: false,
+    preloadImages: false,
+    lazy: {
+        loadOnTransitionStart: false,
+        loadPrevNext: false,
+    }
+});
+
 
 let cardsSlider = [...document.querySelectorAll('.gallery-mob')];
+
 function goCardsSlider() {
     if (!cardsSlider.length) {
 
@@ -78,7 +101,7 @@ function goCardsSlider() {
                 spaceBetween: 20,
                 slidesPerView: 2,
                 slidesPerColumn: 2,
-                slidesPerGroup:1,
+                slidesPerGroup: 1,
                 slidesPerColumnFill: 'row',
                 speed: 600,
                 // spaceBetween: 10,
@@ -101,7 +124,7 @@ function goCardsSlider() {
                         spaceBetween: 10,
                         slidesPerView: 1,
                         slidesPerColumn: 2,
-                        slidesPerGroup:1,
+                        slidesPerGroup: 1,
                         slidesPerColumnFill: 'row',
 
                     },

@@ -2,7 +2,9 @@
 @import "../common/mixins";
 
 .hero {
-  padding: 50px 0 96px;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
 
   .container {
     display: flex;
@@ -11,28 +13,55 @@
   }
 }
 
-.hero-content {
-  position: relative;
-  flex: 0 0 calc(100% - 566px);
+.hero-swiper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
 
-  > span {
+.hero-swiper-wrapper {
+  height: 100% !important;
+}
+
+.hero-swiper-slide {
+  background: #000;
+  width: 100% !important;
+  height: 100% !important;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: zoom-1 5000ms forwards infinite;
+  }
+}
+
+.hero-content {
+  padding-top: 136px;
+ .container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   position: relative;
+ }
+
+   span {
     display: block;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
-    color: $second-color;
+    color: #fff;
     margin-bottom: 15px;
-  }
-
-  strong {
-    color: $green;
   }
 
   h1 {
     font-size: 50px;
     line-height: 57px;
     font-weight: 700;
-    color: $second-color;
+    color: #fff;
     margin-bottom: 15px;
     max-width: 610px;
   }
@@ -42,6 +71,7 @@
     line-height: 34px;
     margin-bottom: 35px;
     max-width: 480px;
+    color: #fff;
   }
 
   .bubble-1, .bubble-2 {
@@ -97,19 +127,11 @@
   }
 }
 
-.hero-img {
-  background: #F3F6FB;
-  flex: 0 0 566px;
-
-  .bubble-1 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $fiolet-gradient;
+@keyframes zoom-1 {
+  from {
+    transform: scale(1.1);
   }
-
-  .bubble-2 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
-  }
-
-  .bubble-3 {
-    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
+  to {
+    transform: scale(1);
   }
 }
