@@ -83,6 +83,23 @@ const heroSwiper = new Swiper('.hero-swiper', {
     }
 });
 
+// Сколл в начало страници
+const goTopBtn = document.querySelectorAll('.go-top')
+
+if (!goTopBtn.length) {
+
+} else {
+    goTopBtn.forEach(btn => {
+        btn.addEventListener('click', function(elem) {
+            elem.preventDefault()
+            window.scrollTo({
+                top: 'start',
+                behavior: 'smooth'
+            })
+        })
+    })
+}
+
 
 let cardsSlider = [...document.querySelectorAll('.gallery-mob')];
 
