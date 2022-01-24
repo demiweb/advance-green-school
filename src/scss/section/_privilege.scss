@@ -5,10 +5,48 @@
   padding: 100px 0 80px;
   background: $second-section-bg;
   height: 100%;
+  position: relative;
+
+  > svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 81.51%;
+    height: 100%;
+
+    path {
+    }
+  }
 
   .section-head {
     margin: 0 0 120px 50%;
     transform: translateX(-50%);
+  }
+
+  > img {
+    position: absolute;
+    top: 238px;
+    right: 0;
+  }
+
+  .parallax-left {
+    bottom: 7%;
+    left: 50px;
+
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
+
+  .parallax-right {
+    top: -3%;
+    right: 0;
+
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
   }
 }
 
@@ -149,3 +187,8 @@
   }
 }
 
+@keyframes strokeOffset {
+  to {
+
+  }
+}

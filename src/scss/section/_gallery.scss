@@ -3,10 +3,61 @@
 
 .gallery {
   padding: 100px 0 130px;
+  position: relative;
 
   .section-head {
     margin: 0 0 80px 50%;
     transform: translateX(-50%);
+  }
+
+  .bubble- {
+    &1, &2 {
+      border-radius: 100%;
+      position: absolute;
+      box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(60px);
+      z-index: -1;
+      background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
+    }
+  }
+
+  .bubble-1 {
+    width: 210px;
+    height: 210px;
+    bottom: 147px;
+    left: 13.28%;
+  }
+
+  .bubble-2 {
+    width: 46px;
+    height: 46px;
+    bottom: 357px;
+    left: 14.11%;
+  }
+
+  .planets {
+    right: -424px;
+    top: 481px;
+  }
+
+  .parallax-left {
+    left: 41px;
+    top: 70%;
+
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
+
+  .parallax-right {
+    right: 0;
+    bottom: -23%;
+
+    .scene {
+      top: 50px;
+      right: 25px;
+    }
   }
 }
 

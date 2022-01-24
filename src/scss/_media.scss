@@ -104,7 +104,6 @@ body {
 
 .location-content .img:nth-of-type(5) {
   width: calc((100% - 41.91%) - 390px);
-  padding-top: 28%;
 }
 
 .location-content .img:nth-of-type(3) {
@@ -1157,6 +1156,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  section {
+    opacity: 1;
+  }
+
   .price-bottom ul li a {
     width: 100%;
     height: auto;

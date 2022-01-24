@@ -17,6 +17,10 @@ main {
   overflow: hidden;
 }
 
+section {
+  opacity: 0;
+}
+
 .section-head {
   display: inline-block;
   font-size: 45px;

@@ -3,6 +3,32 @@
 
 .price {
   padding: 0 0 120px;
+  position: relative;
+
+  .planets {
+    right: -424px;
+    bottom: -305px;
+  }
+
+  .parallax-left {
+    left: 29px;
+    top: -150%;
+
+    .scene {
+      top: 50px;
+      left: 20px;
+    }
+  }
+
+  .parallax-right {
+    right: 10px;
+    bottom: -192%;
+
+    .scene {
+      top: 50px;
+      left: 20px;
+    }
+  }
 }
 
 .price-content {

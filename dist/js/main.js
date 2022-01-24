@@ -268,3 +268,61 @@ $(".menu li a").click(function (e) {
         scrollTop: $(lnk).offset().top - 70
     }, 500);
 });
+
+
+const parallax = document.querySelectorAll('.rellax')
+
+if (!parallax.length) {
+
+} else {
+    parallax.forEach(elem => {
+        new Rellax(elem);
+    })
+}
+
+
+const scene = document.querySelectorAll('.scene')
+
+if (!scene.length) {
+
+} else {
+    scene.forEach(elem => {
+        new Parallax(elem)
+    })
+}
+
+const allSection = document.querySelectorAll('section')
+
+if (!allSection.length) {
+
+} else {
+    allSection.forEach(section => {
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                let el = entry.target
+
+                if (entry.intersectionRatio) {
+                    el.style.animation = 'fade 1500ms ease forwards'
+                    observer.unobserve(entry.target)
+                }
+            })
+        }, {threshold: .2})
+
+        if (window.innerWidth > 992) {
+            allSection.forEach(animate => {
+                observer.observe(animate)
+            })
+        }
+    })
+}
+
+const allLazy = document.querySelectorAll('.lazyload');
+
+if (!allLazy.length) {
+
+} else {
+    allLazy.forEach(img => {
+        const observer = lozad(img);
+        observer.observe();
+    })
+}

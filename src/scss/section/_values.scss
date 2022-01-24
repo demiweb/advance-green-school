@@ -3,6 +3,31 @@
 
 .values {
   padding: 120px 0 0;
+  position: relative;
+
+  .planets {
+    transform: scale(1, 1);
+    left: -424px;
+    top: -232px;
+  }
+
+  .parallax-left {
+    left: 24px;
+    top: 50%;
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
+
+  .parallax-right {
+    right: 60px;
+    top: 200px;
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
 }
 
 .values-content {

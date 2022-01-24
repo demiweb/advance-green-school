@@ -2,6 +2,22 @@
 @import "../common/mixins";
 
 .discounts {
+  position: relative;
+  .planets {
+    transform: scale(-1, 1);
+    left: -424px;
+    top: 0;
+  }
+
+  .parallax-left {
+    left: 29px;
+    top: -100%;
+
+    .scene {
+      top: 50px;
+      left: 20px;
+    }
+  }
 }
 
 .discounts-content {

@@ -4,6 +4,27 @@
 .advantages {
   margin: -120px 0 120px;
   z-index: 5;
+  position: relative;
+
+  .parallax-left {
+    left: 29px;
+    top: -28%;
+
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
+
+  .parallax-right {
+    right: 100px;
+    bottom: -30%;
+
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
 }
 
 .advantages-content {
@@ -13,6 +34,13 @@
   padding: 120px;
   margin: 0 120px;
   position: relative;
+  overflow: hidden;
+
+  > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
   .section-head {
     margin-left: 50%;

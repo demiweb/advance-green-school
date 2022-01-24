@@ -95,6 +95,10 @@ main {
   overflow: hidden;
 }
 
+section {
+  opacity: 0;
+}
+
 .section-head {
   display: inline-block;
   font-size: 45px;
@@ -837,6 +841,48 @@ h2 {
      object-fit: cover;
 }
 
+.planets {
+  position: absolute;
+}
+
+.planets circle {
+  -webkit-box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+}
+
+.parallax-left,
+.parallax-right {
+  position: absolute;
+  z-index: -1;
+}
+
+.parallax-left > svg,
+.parallax-right > svg {
+  position: absolute;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -1023,6 +1069,41 @@ h2 {
           justify-content: space-between;
 }
 
+.about-us .bubble-4,
+.about-us .bubble-5 {
+  border-radius: 100%;
+  position: absolute;
+  -webkit-box-shadow: inset 0px 4px 70px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px 4px 70px rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+}
+
+.about-us .bubble-4 {
+  -webkit-mask: url("../img/svg/semicircle-mask.svg") right;
+          mask: url("../img/svg/semicircle-mask.svg") right;
+  width: 52px;
+  height: 52px;
+  top: 240px;
+  right: 82px;
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#2DD882), to(#1FAB64));
+  background: -o-radial-gradient(29.76% 19.64%, 69.64% 69.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -o-linear-gradient(top, #2DD882 0%, #1FAB64 100%);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2DD882 0%, #1FAB64 100%);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.about-us .bubble-5 {
+  width: 26px;
+  height: 26px;
+  top: 312px;
+  right: 122px;
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#2770C0), to(#39C2ED));
+  background: -o-radial-gradient(29.76% 19.64%, 69.64% 69.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -o-linear-gradient(top, #2770C0 0%, #39C2ED 100%);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+}
+
 .about-us-content {
   position: relative;
   -webkit-box-flex: 0;
@@ -1126,6 +1207,35 @@ h2 {
 
 .values {
   padding: 120px 0 0;
+  position: relative;
+}
+
+.values .planets {
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+  left: -424px;
+  top: -232px;
+}
+
+.values .parallax-left {
+  left: 24px;
+  top: 50%;
+}
+
+.values .parallax-left .scene {
+  top: 50px;
+  left: 25px;
+}
+
+.values .parallax-right {
+  right: 60px;
+  top: 200px;
+}
+
+.values .parallax-right .scene {
+  top: 50px;
+  left: 25px;
 }
 
 .values-content {
@@ -1237,6 +1347,7 @@ h2 {
 
 .gallery {
   padding: 100px 0 130px;
+  position: relative;
 }
 
 .gallery .section-head {
@@ -1244,6 +1355,59 @@ h2 {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.gallery .bubble-1,
+.gallery .bubble-2 {
+  border-radius: 100%;
+  position: absolute;
+  -webkit-box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  z-index: -1;
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#2770C0), to(#39C2ED));
+  background: -o-radial-gradient(29.76% 19.64%, 69.64% 69.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -o-linear-gradient(top, #2770C0 0%, #39C2ED 100%);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+}
+
+.gallery .bubble-1 {
+  width: 210px;
+  height: 210px;
+  bottom: 147px;
+  left: 13.28%;
+}
+
+.gallery .bubble-2 {
+  width: 46px;
+  height: 46px;
+  bottom: 357px;
+  left: 14.11%;
+}
+
+.gallery .planets {
+  right: -424px;
+  top: 481px;
+}
+
+.gallery .parallax-left {
+  left: 41px;
+  top: 70%;
+}
+
+.gallery .parallax-left .scene {
+  top: 50px;
+  left: 25px;
+}
+
+.gallery .parallax-right {
+  right: 0;
+  bottom: -23%;
+}
+
+.gallery .parallax-right .scene {
+  top: 50px;
+  right: 25px;
 }
 
 .gallery-swiper-slide {
@@ -1311,6 +1475,15 @@ h2 {
   padding: 100px 0 80px;
   background: #F3F6FB;
   height: 100%;
+  position: relative;
+}
+
+.privilege > svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 81.51%;
+  height: 100%;
 }
 
 .privilege .section-head {
@@ -1318,6 +1491,32 @@ h2 {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.privilege > img {
+  position: absolute;
+  top: 238px;
+  right: 0;
+}
+
+.privilege .parallax-left {
+  bottom: 7%;
+  left: 50px;
+}
+
+.privilege .parallax-left .scene {
+  top: 50px;
+  left: 25px;
+}
+
+.privilege .parallax-right {
+  top: -3%;
+  right: 0;
+}
+
+.privilege .parallax-right .scene {
+  top: 50px;
+  left: 25px;
 }
 
 .privilege-content {
@@ -1467,9 +1666,39 @@ h2 {
   text-transform: uppercase;
 }
 
+@-webkit-keyframes strokeOffset {
+}
+
+@keyframes strokeOffset {
+}
+
 .application {
   padding: 120px 0 150px;
   position: relative;
+}
+
+.application .planets {
+  top: 195px;
+  right: -424px;
+}
+
+.application .parallax-left {
+  left: 41px;
+}
+
+.application .parallax-left .scene {
+  top: 50px;
+  right: 0;
+}
+
+.application .parallax-right {
+  right: 0;
+  top: 0;
+}
+
+.application .parallax-right .scene {
+  top: 50px;
+  right: 25px;
 }
 
 .application-content {
@@ -1649,10 +1878,26 @@ h2 {
   height: 74px;
 }
 
-.planets {
-  position: absolute;
-  top: 195px;
-  right: -424px;
+.discounts {
+  position: relative;
+}
+
+.discounts .planets {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  left: -424px;
+  top: 0;
+}
+
+.discounts .parallax-left {
+  left: 29px;
+  top: -100%;
+}
+
+.discounts .parallax-left .scene {
+  top: 50px;
+  left: 20px;
 }
 
 .discounts-content {
@@ -1736,6 +1981,27 @@ h2 {
 .advantages {
   margin: -120px 0 120px;
   z-index: 5;
+  position: relative;
+}
+
+.advantages .parallax-left {
+  left: 29px;
+  top: -28%;
+}
+
+.advantages .parallax-left .scene {
+  top: 50px;
+  left: 25px;
+}
+
+.advantages .parallax-right {
+  right: 100px;
+  bottom: -30%;
+}
+
+.advantages .parallax-right .scene {
+  top: 50px;
+  left: 25px;
 }
 
 .advantages-content {
@@ -1746,6 +2012,13 @@ h2 {
   padding: 120px;
   margin: 0 120px;
   position: relative;
+  overflow: hidden;
+}
+
+.advantages-content > img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .advantages-content .section-head {
@@ -1859,6 +2132,8 @@ h2 {
 .teaching {
   padding: 140px 0 120px;
   background: #2A3A56;
+  position: relative;
+  z-index: 1;
 }
 
 .teaching h2 {
@@ -1888,6 +2163,31 @@ h2 {
           transform: translate(-53%, -50%) rotate(3deg);
 }
 
+.teaching .planets {
+  right: -424px;
+  top: 40px;
+}
+
+.teaching .parallax-left {
+  left: 29px;
+  top: -100%;
+}
+
+.teaching .parallax-left .scene {
+  top: 50px;
+  left: 20px;
+}
+
+.teaching .parallax-right {
+  right: 11px;
+  top: -124%;
+}
+
+.teaching .parallax-right .scene {
+  top: 50px;
+  right: 5px;
+}
+
 .teaching-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1895,12 +2195,20 @@ h2 {
   width: 1170px;
   margin: 0 auto;
   position: relative;
+  z-index: 5;
 }
 
 .teaching-content > img:first-of-type {
   position: absolute;
   top: 206px;
   left: 36.09%;
+}
+
+.teaching-content > img:last-of-type {
+  position: absolute;
+  top: -151px;
+  left: -171px;
+  z-index: -1;
 }
 
 .teaching-content ul {
@@ -1936,6 +2244,14 @@ h2 {
 
 .teaching-content > div {
   margin-left: 30px;
+  position: relative;
+}
+
+.teaching-content > div > img {
+  position: absolute;
+  top: -11px;
+  right: -31px;
+  z-index: -1;
 }
 
 .teaching-content > div p {
@@ -2008,6 +2324,7 @@ h2 {
 
 .clubs {
   padding: 140px 0 120px;
+  position: relative;
 }
 
 .clubs h2 {
@@ -2032,6 +2349,47 @@ h2 {
           transform: translate(-52%, -50%) rotate(3deg);
 }
 
+.clubs .bubble-4,
+.clubs .bubble-5 {
+  border-radius: 100%;
+  position: absolute;
+  -webkit-box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  z-index: 1;
+}
+
+.clubs .bubble-4 {
+  width: 114px;
+  height: 114px;
+  top: 207px;
+  right: 183px;
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#2DD882), to(#1FAB64));
+  background: -o-radial-gradient(29.76% 19.64%, 69.64% 69.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -o-linear-gradient(top, #2DD882 0%, #1FAB64 100%);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2DD882 0%, #1FAB64 100%);
+}
+
+.clubs .bubble-5 {
+  width: 46px;
+  height: 46px;
+  top: 324px;
+  right: 274px;
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#2770C0), to(#39C2ED));
+  background: -o-radial-gradient(29.76% 19.64%, 69.64% 69.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -o-linear-gradient(top, #2770C0 0%, #39C2ED 100%);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, #2770C0 0%, #39C2ED 100%);
+}
+
+.clubs .parallax-left {
+  left: 29px;
+  top: -80%;
+}
+
+.clubs .parallax-left .scene {
+  top: 50px;
+  left: 20px;
+}
+
 .clubs-content {
   max-width: 1170px;
   padding: 0 15px;
@@ -2046,6 +2404,7 @@ h2 {
       flex-wrap: wrap;
   gap: 30px;
   position: relative;
+  z-index: 5;
 }
 
 .clubs-content a:not(:last-of-type) {
@@ -2141,15 +2500,61 @@ h2 {
 }
 
 .location {
-  padding: 120px 0;
+  padding: 136px 0;
   background: #F3F6FB;
+  position: relative;
+  z-index: 1;
 }
 
 .location .section-head {
-  margin: 0 0 50px 50%;
+  margin: 0 0 90px 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.location > img {
+  position: absolute;
+  top: 189px;
+  right: 0;
+}
+
+.location .bubble-1,
+.location .bubble-2 {
+  border-radius: 100%;
+  position: absolute;
+  -webkit-box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -webkit-gradient(linear, left top, right top, from(#3669CD), color-stop(47.21%, #8D3BDE), color-stop(97.47%, #EA5FAB));
+  background: -o-radial-gradient(29.76% 19.64%, 69.64% 69.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), -o-linear-gradient(left, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+  background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(90deg, #3669CD 0%, #8D3BDE 47.21%, #EA5FAB 97.47%);
+  z-index: 1;
+}
+
+.location .bubble-1 {
+  width: 117px;
+  height: 117px;
+  top: 237px;
+  left: 212px;
+}
+
+.location .bubble-2 {
+  width: 47px;
+  height: 47px;
+  top: 187px;
+  left: 190px;
+}
+
+.location .parallax-right {
+  right: 10px;
+  bottom: -51%;
+}
+
+.location .parallax-right .scene {
+  top: 50px;
+  left: 20px;
 }
 
 .location-content {
@@ -2161,6 +2566,8 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 5;
+  position: relative;
 }
 
 .location-content ul {
@@ -2175,6 +2582,7 @@ h2 {
           box-shadow: 0 3px 16px rgba(43, 64, 83, 0.09);
   border-radius: 60px 0 0 0;
   margin: 0 30px 30px 0;
+  z-index: 5;
 }
 
 .location-content ul li {
@@ -2252,6 +2660,13 @@ h2 {
   border-radius: 0 0 60px 0;
   padding-top: 30.85%;
   margin: -7.03% 0 0;
+}
+
+.location-content > svg {
+  position: absolute;
+  right: -41px;
+  bottom: -39px;
+  z-index: -1;
 }
 
 .excursion {
@@ -2376,6 +2791,32 @@ h2 {
 
 .price {
   padding: 0 0 120px;
+  position: relative;
+}
+
+.price .planets {
+  right: -424px;
+  bottom: -305px;
+}
+
+.price .parallax-left {
+  left: 29px;
+  top: -150%;
+}
+
+.price .parallax-left .scene {
+  top: 50px;
+  left: 20px;
+}
+
+.price .parallax-right {
+  right: 10px;
+  bottom: -192%;
+}
+
+.price .parallax-right .scene {
+  top: 50px;
+  left: 20px;
 }
 
 .price-content {
@@ -2647,6 +3088,17 @@ h2 {
 
 .networks {
   margin-bottom: 120px;
+  position: relative;
+}
+
+.networks .parallax-left {
+  left: 104px;
+  top: 505%;
+}
+
+.networks .parallax-left .scene {
+  top: 50px;
+  left: 25px;
 }
 
 .networks-content {
@@ -2930,7 +3382,6 @@ body.no-scroll main {
 
 .location-content .img:nth-of-type(5) {
   width: calc(58.09% - 390px);
-  padding-top: 28%;
 }
 
 .location-content .img:nth-of-type(3) {
@@ -4356,6 +4807,10 @@ body.no-scroll main {
   .popup-form-content {
     width: 90%;
     padding: 50px 90px;
+  }
+
+  section {
+    opacity: 1;
   }
 
   .price-bottom ul li a {

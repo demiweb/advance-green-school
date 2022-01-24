@@ -4,6 +4,29 @@
 .application {
   padding: 120px 0 150px;
   position: relative;
+
+  .planets {
+    top: 195px;
+    right: -424px;
+  }
+  .parallax-left {
+    left: 41px;
+
+    .scene {
+      top: 50px;
+      right: 0;
+    }
+  }
+
+  .parallax-right {
+    right: 0;
+    top: 0;
+
+    .scene {
+      top: 50px;
+      right: 25px;
+    }
+  }
 }
 
 .application-content {
@@ -152,10 +175,3 @@
     height: 74px;
   }
 }
-
-.planets {
-  position: absolute;
-  top: 195px;
-  right: -424px;
-}
-

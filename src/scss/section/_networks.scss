@@ -3,6 +3,17 @@
 
 .networks {
   margin-bottom: 120px;
+  position: relative;
+
+  .parallax-left {
+    left: 104px;
+    top: 505%;
+
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
 }
 
 .networks-content {
