@@ -11,10 +11,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 81.51%;
-    height: 100%;
 
-    path {
+    > path {
+      opacity: 0;
     }
   }
 
@@ -128,10 +127,28 @@
 
   &:nth-child(4) {
     margin: 5.20% 10.05% 0 42.39%;
+    background: $green-gradient;
+
+    &:after {
+      background: $green-gradient;
+    }
+
+    .bubble-1, .bubble-2 {
+      background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $green-gradient;
+    }
   }
 
   &:nth-child(5) {
     margin-top: 5.20%;
+    background: $fiolet-gradient;
+
+    &:after {
+      background: $fiolet-gradient;
+    }
+
+    .bubble-1, .bubble-2 {
+      background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $fiolet-gradient;
+    }
   }
 
   .bubble-1, .bubble-2 {
@@ -188,7 +205,24 @@
 }
 
 @keyframes strokeOffset {
+  from {
+    opacity: 1;
+  }
   to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
 
+
+@keyframes strokeOpacity {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

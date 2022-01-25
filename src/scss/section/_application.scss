@@ -43,6 +43,10 @@
 .application-text {
   z-index: 3;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 55.08%;
+  font-size: 0;
 
   > span {
     font-size: 21px;
@@ -98,10 +102,11 @@
 
   .step {
     display: inline-block;
+    flex: 0 0 calc(100% / 3);
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 20px;
 
-    &:not(:last-child) {
-      margin-right: 80px;
-    }
 
     > div {
       width: 115px;

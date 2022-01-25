@@ -59,6 +59,11 @@ function img () {
         .pipe(dest('dist/img/'))
 }
 
+function fonts () {
+    return src('src/fonts/**/*.*')
+        .pipe(dest('dist/fonts/'))
+}
+
 function clean () {
     return del('dist/')
 }
@@ -68,6 +73,7 @@ function watchFiles() {
     watch('src/scss/**/*.scss', series(scss, browserSyncReload))
     watch('src/js/**/*.js', series(js, browserSyncReload))
     watch('src/img/**/*.*', series(img, browserSyncReload))
+    watch('src/fonts/**/*.*', series(fonts, browserSyncReload))
 }
 
 exports.default = series(
@@ -76,6 +82,7 @@ exports.default = series(
     scss,
     js,
     img,
+    fonts,
     browserSyncServe,
     watchFiles,
 )

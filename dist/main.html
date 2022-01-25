@@ -23,6 +23,7 @@
     <!-- End Google Tag Manager -->
     <!-- Подключение линков -->
     <!--<link href="http://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">-->
+<link href = "fonts/EuclidCircularB/stylesheet.css" rel = "stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.min.css">
@@ -258,35 +259,40 @@
     <!--  Start section about-us  -->
     <section class="about-us" id="about-us">
         <div class="container">
-            <div class="about-us-img img-bubbles">
-                <svg class="line-1" width="71" height="97" viewBox="0 0 71 97" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M0.0584493 96.3022C4.77534 69.8739 18.0128 43.9016 39.4863 22.899C48.9507 13.6423 59.3448 6.0064 70.2817 0.00726883C56.7216 5.22006 43.9789 13.2233 32.9332 24.0267C12.5427 43.9699 1.56403 69.9064 0.0584493 96.3022Z"
-                          fill="url(#paint0_linear_414_1250)"/>
-                    <defs>
-                        <linearGradient id="paint0_linear_414_1250" x1="22.0154" y1="34.705" x2="42.0714" y2="55.2108"
-                                        gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2DD882"/>
-                            <stop offset="1" stop-color="#1FAB64"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <img class="lazyload" data-src="img/about-us-img.png" alt=""
-                     style="-webkit-mask: url('img/hero-img-mask.png') no-repeat center 100%">
-                <svg class="line-2" width="71" height="95" viewBox="0 0 71 95" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M70.9577 0.846472C68.2208 12.7057 63.885 24.5334 57.8688 35.9836C44.1085 62.1726 23.7353 82.2429 0.708984 94.6489C24.7858 85.4343 45.7393 67.7577 58.6727 43.1425C65.7983 29.5808 69.8084 15.2091 70.9577 0.846472Z"
-                          fill="url(#paint0_linear_414_1253)"/>
-                    <defs>
-                        <linearGradient id="paint0_linear_414_1253" x1="27.6195" y1="43.432" x2="51.8354" y2="56.1555"
-                                        gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2DD882"/>
-                            <stop offset="1" stop-color="#1FAB64"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
+            <div class="about-us-img">
+                <div class="img">
+                    <img class="lazyload" data-src="img/about-us-img.png" alt="">
+                </div>
+                <div class="shadow">
+                    <svg class="line-1" width="71" height="97" viewBox="0 0 71 97" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.0584493 96.3022C4.77534 69.8739 18.0128 43.9016 39.4863 22.899C48.9507 13.6423 59.3448 6.0064 70.2817 0.00726883C56.7216 5.22006 43.9789 13.2233 32.9332 24.0267C12.5427 43.9699 1.56403 69.9064 0.0584493 96.3022Z"
+                              fill="url(#paint0_linear_414_1250)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_414_1250" x1="22.0154" y1="34.705" x2="42.0714"
+                                            y2="55.2108"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2DD882"/>
+                                <stop offset="1" stop-color="#1FAB64"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg class="line-2" width="71" height="95" viewBox="0 0 71 95" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M70.9577 0.846472C68.2208 12.7057 63.885 24.5334 57.8688 35.9836C44.1085 62.1726 23.7353 82.2429 0.708984 94.6489C24.7858 85.4343 45.7393 67.7577 58.6727 43.1425C65.7983 29.5808 69.8084 15.2091 70.9577 0.846472Z"
+                              fill="url(#paint0_linear_414_1253)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_414_1253" x1="27.6195" y1="43.432" x2="51.8354"
+                                            y2="56.1555"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2DD882"/>
+                                <stop offset="1" stop-color="#1FAB64"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
                 <div class="bubble-1"></div>
                 <div class="bubble-2"></div>
                 <div class="bubble-3"></div>
@@ -305,8 +311,6 @@
                 <div class="bubble-3"></div>
             </div>
         </div>
-        <div class="bubble-4"></div>
-        <div class="bubble-5"></div>
     </section> <!--  End section about-us  -->
 
     <!--  Start section values  -->
@@ -663,10 +667,9 @@
                 </svg>
             </div>
         </div>
-    </section>
-    <!--  End section gallery  -->
+    </section> <!--  End section gallery  -->
 
-    <!-- gallery-mob    -->
+    <!--  Start section gallery-mob  -->
     <section class="gallery-mob">
         <div class="container">
             <span class="section-head">
@@ -711,23 +714,35 @@
             </div>
 
         </div>
-    </section>
-    <!-- gallery-mob    -->
-
+    </section> <!--  End section gallery-mob  -->
 
     <!--  Start section privilege  -->
     <section class="privilege">
         <svg width="1555" height="709" viewBox="0 0 1555 709" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id='p' d="M-11.9408 71.1663C-11.9408 71.1663 -14.4408 50.1662 13.0592 55.1662C40.5592 60.1662 59.5593 62.1662 71.5593 50.1662C83.5593 38.1662 57.5592 18.1663 89.0593 4.16626C120.559 -9.83374 218.559 48.1662 305.059 59.6662C391.559 71.1662 460.132 75.8542 532.059 88.1663C617.402 102.775 655.559 148.166 704.559 133.666C753.56 119.166 744.559 97.8516 778.059 81.6663C811.559 65.481 888.63 85.6989 957.559 93.6663C992.481 97.7028 1031.88 90.5537 1065.06 102.166C1103.37 115.574 1101.56 153.666 1138.56 157.666C1175.56 161.666 1190.39 122.508 1239.56 115.666C1306.81 106.309 1302.56 167.666 1406.56 161.666C1470.07 158.002 1561.5 211.666 1552.56 248.666C1543.62 285.666 1515.56 313.666 1515.56 313.666C1515.56 313.666 1455.52 383.765 1406.56 415.166C1366.02 441.165 1340.29 452.186 1294.06 465.666C1265.57 473.973 1252.06 466.541 1220.56 481.166C1189.06 495.791 1184.56 524.166 1135.06 519.166C1085.56 514.166 1025.49 510.237 957.559 524.166C858.156 544.549 725.559 615.166 724.559 643.166C723.559 671.166 751.113 660.814 750.559 679.166C750.03 696.707 724.559 718.166 724.559 718.166"
-                  stroke="#BEC7E7" stroke-width="3" stroke-dasharray="7 7"/>
+            <path
+                    d="M-11.9408 71.1663C-11.9408 71.1663 -14.4408 50.1662 13.0592 55.1662C40.5592 60.1662 59.5593 62.1662 71.5593 50.1662C83.5593 38.1662 57.5592 18.1663 89.0593 4.16626C120.559 -9.83374 218.559 48.1662 305.059 59.6662C391.559 71.1662 460.132 75.8542 532.059 88.1663C617.402 102.775 655.559 148.166 704.559 133.666C753.56 119.166 744.559 97.8516 778.059 81.6663C811.559 65.481 888.63 85.6989 957.559 93.6663C992.481 97.7028 1031.88 90.5537 1065.06 102.166C1103.37 115.574 1101.56 153.666 1138.56 157.666C1175.56 161.666 1190.39 122.508 1239.56 115.666C1306.81 106.309 1302.56 167.666 1406.56 161.666C1470.07 158.002 1561.5 211.666 1552.56 248.666C1543.62 285.666 1515.56 313.666 1515.56 313.666C1515.56 313.666 1455.52 383.765 1406.56 415.166C1366.02 441.165 1340.29 452.186 1294.06 465.666C1265.57 473.973 1252.06 466.541 1220.56 481.166C1189.06 495.791 1184.56 524.166 1135.06 519.166C1085.56 514.166 1025.49 510.237 957.559 524.166C858.156 544.549 725.559 615.166 724.559 643.166C723.559 671.166 751.113 660.814 750.559 679.166C750.03 696.707 724.559 718.166 724.559 718.166"
+                    stroke="#BEC7E7" stroke-width="3" mask="url(#mask-1)" stroke-dasharray="7 7"
+                    class="anim" data-anim-name="strokeOpacity" data-anim-duration="1.2s"/>
+            <defs>
+                <mask id="mask-1">
+                    <path id='p'
+                          d="M-11.9408 71.1663C-11.9408 71.1663 -14.4408 50.1662 13.0592 55.1662C40.5592 60.1662 59.5593 62.1662 71.5593 50.1662C83.5593 38.1662 57.5592 18.1663 89.0593 4.16626C120.559 -9.83374 218.559 48.1662 305.059 59.6662C391.559 71.1662 460.132 75.8542 532.059 88.1663C617.402 102.775 655.559 148.166 704.559 133.666C753.56 119.166 744.559 97.8516 778.059 81.6663C811.559 65.481 888.63 85.6989 957.559 93.6663C992.481 97.7028 1031.88 90.5537 1065.06 102.166C1103.37 115.574 1101.56 153.666 1138.56 157.666C1175.56 161.666 1190.39 122.508 1239.56 115.666C1306.81 106.309 1302.56 167.666 1406.56 161.666C1470.07 158.002 1561.5 211.666 1552.56 248.666C1543.62 285.666 1515.56 313.666 1515.56 313.666C1515.56 313.666 1455.52 383.765 1406.56 415.166C1366.02 441.165 1340.29 452.186 1294.06 465.666C1265.57 473.973 1252.06 466.541 1220.56 481.166C1189.06 495.791 1184.56 524.166 1135.06 519.166C1085.56 514.166 1025.49 510.237 957.559 524.166C858.156 544.549 725.559 615.166 724.559 643.166C723.559 671.166 751.113 660.814 750.559 679.166C750.03 696.707 724.559 718.166 724.559 718.166"
+                          stroke="white" stroke-width="3" class="anim" data-anim-name="strokeOffset"
+                          data-anim-duration="7s" data-anim-delay="1s">
+                    </path>
+
+                </mask>
+            </defs>
         </svg>
         <span class="section-head">
             Ми в цифрах
             </span>
         <div class="privilege-content">
-            <div class="privilege-step">
-                <div class="bubble-1"></div>
-                <div class="bubble-2"></div>
+            <div class="privilege-step anim" data-anim-name="popup" data-anim-delay="2.4s" data-anim-duration="1.5s">
+                <div class="bubble-1 anim" data-anim-name="zoom-fade" data-anim-delay="2.6s"
+                     data-anim-duration="1s"></div>
+                <div class="bubble-2 anim" data-anim-name="zoom-fade" data-anim-delay="3s"
+                     data-anim-duration="1s"></div>
                 <span>
                     3
                 </span>
@@ -735,9 +750,11 @@
                     роки існування найкращої школи для дітей
                 </p>
             </div>
-            <div class="privilege-step">
-                <div class="bubble-1"></div>
-                <div class="bubble-2"></div>
+            <div class="privilege-step anim" data-anim-name="popup" data-anim-delay="3.5s" data-anim-duration="1.5s">
+                <div class="bubble-1 anim" data-anim-name="zoom-fade" data-anim-delay="3.7s"
+                     data-anim-duration="1s"></div>
+                <div class="bubble-2 anim" data-anim-name="zoom-fade" data-anim-delay="3.9s"
+                     data-anim-duration="1s"></div>
                 <span>
                     1
                 </span>
@@ -745,9 +762,11 @@
                     га території для навчання та розваг дітей
                 </p>
             </div>
-            <div class="privilege-step">
-                <div class="bubble-1"></div>
-                <div class="bubble-2"></div>
+            <div class="privilege-step anim" data-anim-name="popup" data-anim-delay="4.7s" data-anim-duration="1.5s">
+                <div class="bubble-1 anim" data-anim-name="zoom-fade" data-anim-delay="4.9s"
+                     data-anim-duration="1s"></div>
+                <div class="bubble-2 anim" data-anim-name="zoom-fade" data-anim-delay="5.1s"
+                     data-anim-duration="1s"></div>
                 <span>
                     45
                 </span>
@@ -755,9 +774,11 @@
                     викладачів займаються з дітьми щоденно
                 </p>
             </div>
-            <div class="privilege-step">
-                <div class="bubble-1"></div>
-                <div class="bubble-2"></div>
+            <div class="privilege-step anim" data-anim-name="popup" data-anim-delay="7.3s" data-anim-duration="1.5s">
+                <div class="bubble-1 anim" data-anim-name="zoom-fade" data-anim-delay="7.5s"
+                     data-anim-duration="1s"></div>
+                <div class="bubble-2 anim" data-anim-name="zoom-fade" data-anim-delay="7.7s"
+                     data-anim-duration="1s"></div>
                 <span>
                     2
                 </span>
@@ -765,9 +786,11 @@
                     міжнародні школи-партнери, які нам довіряють
                 </p>
             </div>
-            <div class="privilege-step">
-                <div class="bubble-1"></div>
-                <div class="bubble-2"></div>
+            <div class="privilege-step anim" data-anim-name="popup" data-anim-delay="6.2s" data-anim-duration="1.5s">
+                <div class="bubble-1 anim" data-anim-name="zoom-fade" data-anim-delay="6.4s"
+                     data-anim-duration="1s"></div>
+                <div class="bubble-2 anim" data-anim-name="zoom-fade" data-anim-delay="6.6s"
+                     data-anim-duration="1s"></div>
                 <span>
                     15
                 </span>
@@ -953,9 +976,12 @@
         </div>
         <div class="parallax-left rellax" data-rellax-speed="1" data-rellax-zindex="-1">
             <svg width="78" height="77" viewBox="0 0 78 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.658519 62.9418C6.1262 68.4896 13.1166 72.707 21.2097 74.8755C45.2156 81.3079 69.8329 67.2779 76.1938 43.5386C80.4048 27.823 75.5591 11.7919 64.8376 0.884361L0.658519 62.9418Z" fill="url(#paint0_linear_414_434)"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.658519 62.9418C6.1262 68.4896 13.1166 72.707 21.2097 74.8755C45.2156 81.3079 69.8329 67.2779 76.1938 43.5386C80.4048 27.823 75.5591 11.7919 64.8376 0.884361L0.658519 62.9418Z"
+                      fill="url(#paint0_linear_414_434)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_434" x1="9.76191" y1="28.9675" x2="75.3865" y2="46.5515" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_434" x1="9.76191" y1="28.9675" x2="75.3865" y2="46.5515"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2DD882"/>
                         <stop offset="1" stop-color="#1FAB64"/>
                     </linearGradient>
@@ -997,7 +1023,8 @@
             <svg width="89" height="90" viewBox="0 0 89 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse rx="44.5" ry="45" transform="matrix(-1 0 0 1 44.5 45)" fill="url(#paint0_linear_414_219)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_219" x1="44.5" y1="0" x2="44.5" y2="90" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_219" x1="44.5" y1="0" x2="44.5" y2="90"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2770C0"/>
                         <stop offset="1" stop-color="#39C2ED"/>
                     </linearGradient>
@@ -1105,7 +1132,8 @@
             <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="57" cy="57" r="47" stroke="url(#paint0_linear_414_431)" stroke-width="20"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_431" x1="0" y1="56.0656" x2="111.117" y2="56.0656" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_431" x1="0" y1="56.0656" x2="111.117" y2="56.0656"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#3669CD"/>
                         <stop offset="0.484375" stop-color="#8D3BDE"/>
                         <stop offset="1" stop-color="#EA5FAB"/>
@@ -1282,7 +1310,8 @@
             <svg width="97" height="98" viewBox="0 0 97 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M76.1071 0L97 98H0L76.1071 0Z" fill="url(#paint0_linear_414_1198)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_1198" x1="48.5" y1="0" x2="48.5" y2="98" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_1198" x1="48.5" y1="0" x2="48.5" y2="98"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2770C0"/>
                         <stop offset="1" stop-color="#39C2ED"/>
                     </linearGradient>
@@ -1321,9 +1350,11 @@
         </div>
         <div class="parallax-right rellax" data-rellax-speed="2" data-rellax-zindex="-1">
             <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="53.8564" width="76.1648" height="76.1648" transform="rotate(45 53.8564 0)" fill="url(#paint0_linear_414_1195)"/>
+                <rect x="53.8564" width="76.1648" height="76.1648" transform="rotate(45 53.8564 0)"
+                      fill="url(#paint0_linear_414_1195)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_1195" x1="91.9388" y1="0" x2="91.9388" y2="76.1648" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_1195" x1="91.9388" y1="0" x2="91.9388" y2="76.1648"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2DD882"/>
                         <stop offset="1" stop-color="#1FAB64"/>
                     </linearGradient>
@@ -1453,31 +1484,37 @@
             <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="57" cy="57" r="47" stroke="url(#paint0_linear_414_546)" stroke-width="20"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_546" x1="57" y1="0" x2="57" y2="114" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_546" x1="57" y1="0" x2="57" y2="114"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2DD882"/>
                         <stop offset="1" stop-color="#1FAB64"/>
                     </linearGradient>
                 </defs>
             </svg>
             <div class="scene">
-                <svg data-depth="3" width="143" height="142" viewBox="0 0 143 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg data-depth="3" width="143" height="142" viewBox="0 0 143 142" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_bi_414_547)">
                         <ellipse cx="71.022" cy="70.8428" rx="71" ry="70.5" fill="url(#paint0_radial_414_547)"/>
                     </g>
                     <defs>
-                        <filter id="filter0_bi_414_547" x="-19.978" y="-19.6572" width="182" height="181" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <filter id="filter0_bi_414_547" x="-19.978" y="-19.6572" width="182" height="181"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                             <feGaussianBlur in="BackgroundImage" stdDeviation="10"/>
                             <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_414_547"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_414_547" result="shape"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_414_547"
+                                     result="shape"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="4"/>
                             <feGaussianBlur stdDeviation="35"/>
                             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
                             <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
                             <feBlend mode="normal" in2="shape" result="effect2_innerShadow_414_547"/>
                         </filter>
-                        <radialGradient id="paint0_radial_414_547" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(42.2839 28.0392) rotate(51.0231) scale(126.314 126.503)">
+                        <radialGradient id="paint0_radial_414_547" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(42.2839 28.0392) rotate(51.0231) scale(126.314 126.503)">
                             <stop stop-color="white" stop-opacity="0.4"/>
                             <stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
                         </radialGradient>
@@ -1490,31 +1527,37 @@
             <svg width="89" height="90" viewBox="0 0 89 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse rx="44.5" ry="45" transform="matrix(-1 0 0 1 44.5 45)" fill="url(#paint0_linear_414_556)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_556" x1="44.5" y1="0" x2="44.5" y2="90" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_556" x1="44.5" y1="0" x2="44.5" y2="90"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2770C0"/>
                         <stop offset="1" stop-color="#39C2ED"/>
                     </linearGradient>
                 </defs>
             </svg>
             <div class="scene">
-                <svg data-depth="2" width="143" height="142" viewBox="0 0 143 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg data-depth="2" width="143" height="142" viewBox="0 0 143 142" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_bi_414_547)">
                         <ellipse cx="71.022" cy="70.8428" rx="71" ry="70.5" fill="url(#paint0_radial_414_547)"/>
                     </g>
                     <defs>
-                        <filter id="filter0_bi_414_547" x="-19.978" y="-19.6572" width="182" height="181" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <filter id="filter0_bi_414_547" x="-19.978" y="-19.6572" width="182" height="181"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                             <feGaussianBlur in="BackgroundImage" stdDeviation="10"/>
                             <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_414_547"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_414_547" result="shape"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_414_547"
+                                     result="shape"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="4"/>
                             <feGaussianBlur stdDeviation="35"/>
                             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
                             <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
                             <feBlend mode="normal" in2="shape" result="effect2_innerShadow_414_547"/>
                         </filter>
-                        <radialGradient id="paint0_radial_414_547" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(42.2839 28.0392) rotate(51.0231) scale(126.314 126.503)">
+                        <radialGradient id="paint0_radial_414_547" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(42.2839 28.0392) rotate(51.0231) scale(126.314 126.503)">
                             <stop stop-color="white" stop-opacity="0.4"/>
                             <stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
                         </radialGradient>
@@ -1654,9 +1697,12 @@
         <div class="bubble-5"></div>
         <div class="parallax-left rellax" data-rellax-speed="-2" data-rellax-zindex="-1">
             <svg width="78" height="77" viewBox="0 0 78 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.658518 62.9451C6.1262 68.493 13.1166 72.7103 21.2097 74.8788C45.2156 81.3112 69.8329 67.2812 76.1938 43.542C80.4048 27.8264 75.5591 11.7953 64.8376 0.887719L0.658518 62.9451Z" fill="url(#paint0_linear_414_769)"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.658518 62.9451C6.1262 68.493 13.1166 72.7103 21.2097 74.8788C45.2156 81.3112 69.8329 67.2812 76.1938 43.542C80.4048 27.8264 75.5591 11.7953 64.8376 0.887719L0.658518 62.9451Z"
+                      fill="url(#paint0_linear_414_769)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_769" x1="9.76191" y1="28.9708" x2="75.3865" y2="46.5549" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_769" x1="9.76191" y1="28.9708" x2="75.3865" y2="46.5549"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2770C0"/>
                         <stop offset="1" stop-color="#39C2ED"/>
                     </linearGradient>
@@ -1750,9 +1796,11 @@
                     <img class="lazyload" data-src="img/location-img-8.png" alt="">
                 </div>
                 <svg width="115" height="115" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="57.8106" cy="57.8102" r="47" transform="rotate(165 57.8106 57.8102)" stroke="url(#paint0_linear_414_832)" stroke-width="20"/>
+                    <circle cx="57.8106" cy="57.8102" r="47" transform="rotate(165 57.8106 57.8102)"
+                            stroke="url(#paint0_linear_414_832)" stroke-width="20"/>
                     <defs>
-                        <linearGradient id="paint0_linear_414_832" x1="0.810635" y1="56.8757" x2="111.927" y2="56.8757" gradientUnits="userSpaceOnUse">
+                        <linearGradient id="paint0_linear_414_832" x1="0.810635" y1="56.8757" x2="111.927" y2="56.8757"
+                                        gradientUnits="userSpaceOnUse">
                             <stop stop-color="#3669CD"/>
                             <stop offset="0.484375" stop-color="#8D3BDE"/>
                             <stop offset="1" stop-color="#EA5FAB"/>
@@ -1766,9 +1814,11 @@
         <div class="bubble-2"></div>
         <div class="parallax-right rellax" data-rellax-speed="2" data-rellax-zindex="-1">
             <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="53.8564" width="76.1648" height="76.1648" transform="rotate(45 53.8564 0)" fill="url(#paint0_linear_414_858)"/>
+                <rect x="53.8564" width="76.1648" height="76.1648" transform="rotate(45 53.8564 0)"
+                      fill="url(#paint0_linear_414_858)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_858" x1="91.9388" y1="0" x2="91.9388" y2="76.1648" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_858" x1="91.9388" y1="0" x2="91.9388" y2="76.1648"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2DD882"/>
                         <stop offset="1" stop-color="#1FAB64"/>
                     </linearGradient>
@@ -1811,9 +1861,9 @@
     <section class="excursion">
         <div class="container">
             <div class="excursion-content">
-                <div class="bubble-1"></div>
-                <div class="bubble-2"></div>
-                <div class="bubble-3"></div>
+                <div class="bubble-1 rellax" data-rellax-speed="1" data-rellax-zindex="-1"></div>
+                <div class="bubble-2 rellax" data-rellax-speed="2" data-rellax-zindex="-1"></div>
+                <div class="bubble-3 rellax" data-rellax-speed="-2" data-rellax-zindex="-1"></div>
                 <div class="section-bg">
                     <img class="lazyload" data-src="img/excursion-bg.png" alt="">
                 </div>
@@ -1999,7 +2049,8 @@
             <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="57" cy="57" r="47" stroke="url(#paint0_linear_414_1003)" stroke-width="20"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_1003" x1="57" y1="0" x2="57" y2="114" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_1003" x1="57" y1="0" x2="57" y2="114"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2770C0"/>
                         <stop offset="1" stop-color="#39C2ED"/>
                     </linearGradient>
@@ -2040,7 +2091,8 @@
             <svg width="89" height="90" viewBox="0 0 89 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse rx="44.5" ry="45" transform="matrix(-1 0 0 1 44.5 45)" fill="url(#paint0_linear_414_1013)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_1013" x1="44.5" y1="0" x2="44.5" y2="90" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_1013" x1="44.5" y1="0" x2="44.5" y2="90"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2DD882"/>
                         <stop offset="1" stop-color="#1FAB64"/>
                     </linearGradient>
@@ -2217,7 +2269,8 @@
             <svg width="97" height="98" viewBox="0 0 97 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M76.1071 0L97 98H0L76.1071 0Z" fill="url(#paint0_linear_414_1052)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_414_1052" x1="48.5" y1="0" x2="48.5" y2="98" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_414_1052" x1="48.5" y1="0" x2="48.5" y2="98"
+                                    gradientUnits="userSpaceOnUse">
                         <stop stop-color="#2DD882"/>
                         <stop offset="1" stop-color="#1FAB64"/>
                     </linearGradient>
@@ -2293,7 +2346,6 @@
             <div class="bubble-3"></div>
         </div>
     </section> <!--  End section address  -->
-
 
 </main>
 <div class="popup-form">

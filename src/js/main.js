@@ -326,3 +326,37 @@ if (!allLazy.length) {
         observer.observe();
     })
 }
+
+const anim = document.querySelectorAll('.anim')
+
+if (!anim.length) {
+
+} else {
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio) {
+                anim.forEach(animElem => {
+                    animElem.style.animationName = animElem.dataset.animName
+                    animElem.style.animationDelay = animElem.dataset.animDelay
+                    animElem.style.animationDuration = animElem.dataset.animDuration
+                })
+
+                let path = document.getElementById('p');
+                if (path) {
+                    const length = path.getTotalLength();
+                    path.style.strokeDasharray = length;
+                    path.style.strokeDashoffset = length;
+                }
+
+                observer.unobserve(entry.target)
+            }
+        })
+    }, {threshold: .5})
+
+    if (innerWidth > 992) {
+        anim.forEach(elem => {
+            observer.observe(elem)
+        })
+    }
+
+}

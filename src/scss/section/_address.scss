@@ -17,8 +17,8 @@
   }
 
   .bubble-3 {
-    right: 255px;
-    bottom: 38px;
+    right: 5%;
+    bottom: 10px;
     width: 305px;
     height: 305px;
     background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
@@ -44,9 +44,11 @@
   .text-item {
     font-size: 21px;
     line-height: 42px;
+
     &:not(:first-child) {
       margin-top: 35px;
     }
+
     span {
       display: block;
     }
@@ -70,6 +72,7 @@
     width: 233px;
     height: 233px;
   }
+
   .bubble-2 {
     top: 144px;
     right: 97px;

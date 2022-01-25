@@ -3,6 +3,7 @@
 
 .excursion {
   padding: 238px 0 170px;
+  position: relative;
 }
 
 .excursion-content {
@@ -25,21 +26,21 @@
     width: 305px;
     height: 305px;
     background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
-    bottom: -57px;
+    bottom: -186%;
     left: -120px;
   }
 
   .bubble-2 {
     width: 221px;
     height: 221px;
-    top: -94px;
+    bottom: -253%;
     right: -110px;
   }
 
   .bubble-3 {
     width: 41px;
     height: 41px;
-    top: -120px;
+    bottom: 528%;
     right: 85px
   }
 
